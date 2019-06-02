@@ -1,0 +1,30 @@
+{
+  "name": "hoseajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts",
+    "build": "tsc",
+    "prod": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagoagenor/hoseaJS.git"
+  },
+  "author": "tiago agenor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagoagenor/hoseaJS/issues"
+  },
+  "homepage": "https://github.com/tiagoagenor/hoseaJS#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "express": "^4.17.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
